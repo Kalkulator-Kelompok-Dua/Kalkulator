@@ -22,6 +22,7 @@ public class CalculatorTest extends BaseTest {
         driver.findElement(page.buttonSeven).click();
         driver.findElement(page.buttonEight).click();
         driver.findElement(page.buttonNine).click();
+
         Assert.assertEquals("123456789", page.getMainScreenText());
 
         driver.findElement(page.buttonClearEntry).click();

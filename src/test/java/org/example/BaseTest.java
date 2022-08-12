@@ -15,7 +15,6 @@ public class BaseTest {
     public void openWebBrowser(){
 
         System.setProperty("webdriver.chrome.driver", "D:\\Aplikasi\\Web Driver\\chromedriver.exe");
-
         driver = new ChromeDriver();
 
         driver.manage().window().maximize();

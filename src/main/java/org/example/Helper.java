@@ -2,7 +2,7 @@ package org.example;
 
 import org.openqa.selenium.WebDriver;
 
-public class Helper {
+class Helper {
     protected WebDriver driver;
 
     public Helper(WebDriver driver) {

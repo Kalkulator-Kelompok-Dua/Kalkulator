@@ -14,7 +14,7 @@ public class PageObject extends Helper{
     By buttonEight = By.xpath("//button[@value='8']");
     By buttonNine = By.xpath("//button[@value='9']");
 
-    By buttonTimes = By.xpath("//button[@value='*']");
+    By buttonMultipication = By.xpath("//button[@value='*']");
     By buttonPlus = By.xpath("//button[@value='+']");
     By buttonMinus = By.xpath("//button[@value='-']");
     By buttonDivide = By.xpath("//button[@value='/']");
