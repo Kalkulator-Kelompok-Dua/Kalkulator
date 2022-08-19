@@ -9,7 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BaseTest {
-    WebDriver driver;
+    private WebDriver driver;
+    protected CalculatorPage calculatorPage;
 
     @Before
     public void openWebBrowser(){
@@ -19,6 +20,8 @@ public class BaseTest {
 
         driver.manage().window().maximize();
         driver.get("https://greyli.github.io/calculator/");
+
+        calculatorPage = new CalculatorPage(driver);
     }
 
     @After
