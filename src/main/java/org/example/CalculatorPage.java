@@ -18,14 +18,19 @@ public class CalculatorPage extends Helper{
     By buttonZero = By.xpath("//button[@value='0']");
 
     /** Function Button */
-    By buttonMultipication = By.xpath("//button[@value='*']");
+    // xpath tombol kali atau perkalian
+    By buttonMultiplication = By.xpath("//button[@value='*']");
+    // xpath tombol tambah atau penjumlahan
     By buttonPlus = By.xpath("//button[@value='+']");
+    // xpath tombol kurang atau pengurangan
     By buttonMinus = By.xpath("//button[@value='-']");
     By buttonDivide = By.xpath("//button[@value='/']");
     By buttonEqual = By.xpath("//button[@id='resultButton']");
     By buttonComma = By.xpath("//button[@value='.']");
     By buttonClearEntry = By.xpath("//button[@id='deleteButton']");
     By buttonAllClear = By.xpath("//button[@id='clearButton']");
+    // xpath tombol = atau hasil
+    By buttonResult = By.xpath("//button[@id='resultButton']");
 
     /** Screen Locator */
     By mainScreen = By.xpath("//div[@id='output']");
@@ -101,4 +106,26 @@ public class CalculatorPage extends Helper{
         return this;
     }
 
+    // tombol kurang atau pengurangan
+    public CalculatorPage clickButtonMinus(){
+        click(buttonMinus);
+        return this;
+    }
+
+    // tombol tambah atau penjumlahan
+    public CalculatorPage clickButtonPlus(){
+        click(buttonPlus);
+        return this;
+    }
+    // tombol = atau hasil
+    public CalculatorPage clickButtonResult(){
+        click(buttonResult);
+        return this;
+    }
+
+    // tombol kali atau perkalian
+    public CalculatorPage clickButtonMultiplication(){
+        click(buttonMultiplication);
+        return this;
+    }
 }
