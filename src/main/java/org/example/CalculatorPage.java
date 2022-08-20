@@ -101,4 +101,10 @@ public class CalculatorPage extends Helper{
         return this;
     }
 
+    // tombol kali atau perkalian
+    public org.example.CalculatorPage clickButtonMultiplication(){
+        click(buttonMultiplication);
+        return this;
+    }
+
 }
